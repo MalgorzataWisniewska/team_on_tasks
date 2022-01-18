@@ -1,0 +1,99 @@
+/* general */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 63.5%;
+}
+
+/* title */
+.title {
+  text-align: center;
+  padding: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* photos */
+.flex {
+  margin: auto;
+  max-width: 90%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo {
+  margin: 0.5rem;
+  width: 20rem;
+  min-height: 20rem;
+  border-radius: 0.7rem;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+
+  transition: all 0.5s;
+}
+.photo h3 {
+  display: block;
+  position: absolute;
+  bottom: -0.5rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  background-color: gray;
+  color: white;
+  border-radius: 0 0 0.7rem 0.7rem;
+}
+
+.photo:hover {
+  cursor: pointer;
+}
+
+.photo.active {
+  box-shadow: 0 0 1rem blue;
+}
+
+#mark {
+  background-image: url(img/Mark.jpg);
+}
+#brian {
+  background-image: url(img/Brian.jpg);
+}
+
+#agnes {
+  background-image: url(img/Agnes.jpg);
+}
+
+/* todolist */
+
+.todoList {
+  width: 90%;
+  margin: 5rem auto;
+  font-size: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.todoList h5 {
+  margin-bottom: 2rem;
+}
+
+.todoList p {
+  font-size: 1rem;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+}
+
+.card {
+  border-radius: 8px 8px 0 0;
+}
+
+.card img {
+  border-radius: 8px 8px 8px 8px;
+}
